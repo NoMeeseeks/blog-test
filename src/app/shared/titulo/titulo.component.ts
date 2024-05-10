@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-titulo',
+  selector: 'shared-titulo',
   standalone: true,
   imports: [],
   templateUrl: './titulo.component.html',
