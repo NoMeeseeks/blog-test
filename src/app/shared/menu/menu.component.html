@@ -1,7 +1,8 @@
-<div class="p-2 text-center">
-    <ul class="p-2 bg-slate-50 rounded gap-4">
+<div class="p-2 list-none text-center sticky top-0">
+    <ul class="flex-col p-2 bg-slate-50 rounded gap-6 text-wrap">
         @for (item of listaMenu; track $index) {
-        <li class="bg-gray-200 pt-2 pb-2">{{item.titulo}}</li>
+        <li class="border-2 pt-2 pb-2 rounded">{{item.titulo}}</li>
+        <div class="m-2"></div>
         }
     </ul>
 </div>
