@@ -1,15 +1,20 @@
-import { Component } from '@angular/core';
+import { Component, OnInit, inject } from '@angular/core';
 import { Publicacion } from '../../interfaces/publicacion.interfaces';
 import { CommonModule } from '@angular/common';
+import { BlogService } from '../../services/blog.service';
+import { HttpClientModule } from '@angular/common/http';
 
 @Component({
   selector: 'app-card',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, HttpClientModule],
   templateUrl: './card.component.html',
   styleUrl: './card.component.css'
 })
-export class CardComponent {
+export class CardComponent implements OnInit {
+
+  private blogService = inject(BlogService);
+
   public publicaciones: Publicacion[] =
     [
       {
@@ -41,4 +46,10 @@ export class CardComponent {
         comentarios: 56,
       },
     ]
+
+  ngOnInit(): void {
+    this.blogService.obtenerPosts().subscribe(publicaciones => { this.publicaciones = publicaciones });
+  }
+
+
 }

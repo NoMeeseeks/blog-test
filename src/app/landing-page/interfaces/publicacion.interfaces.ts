@@ -1,4 +1,5 @@
 export interface Publicacion {
+    id?: number,
     titulo: string,
     descripcionPromo: string,
     descripcion: string,
