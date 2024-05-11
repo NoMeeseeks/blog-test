@@ -1,6 +1,7 @@
-<ul>
-    <li>Videos</li>
-    <li>posts</li>
-    <li>informacion</li>
-    <li>usuario</li>
-</ul>
+<div class="p-2 text-center">
+    <ul class="p-2 bg-slate-50 rounded gap-4">
+        @for (item of listaMenu; track $index) {
+        <li class="bg-gray-200 pt-2 pb-2">{{item.titulo}}</li>
+        }
+    </ul>
+</div>
