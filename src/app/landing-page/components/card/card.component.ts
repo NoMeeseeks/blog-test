@@ -2,12 +2,12 @@ import { Component, OnInit, inject } from '@angular/core';
 import { Publicacion } from '../../interfaces/publicacion.interfaces';
 import { CommonModule } from '@angular/common';
 import { BlogService } from '../../services/blog.service';
-import { HttpClientModule } from '@angular/common/http';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-card',
   standalone: true,
-  imports: [CommonModule, HttpClientModule],
+  imports: [CommonModule, RouterModule],
   templateUrl: './card.component.html',
   styleUrl: './card.component.css'
 })
