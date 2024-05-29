@@ -1,29 +1,47 @@
-<div>
-    <div>
-        <form action="">
-            <label for="">Nombre</label>
-            <input type="text" name="" id="">
+<div class="flex justify-center items-center w-screen h-screen bg-gradient-to-t from-blue-300 to-cyan-300">
+    <form class="flex flex-col items-start gap-2 rounded-xl bg-white shadow-xl p-16 m-4">
 
-            <label for="">Apellido</label>
-            <input type="text" name="" id="">
+        <div class="flex">
+            <div class="mr-2 flex-auto">
+                <label class="text-pretty">Nombres</label>
+                <input class="w-full rounded-lg text-wrap border-gray-300 border p-1 hover:border-blue-500 "
+                    type="text">
+            </div>
+            <div class="flex-auto">
+                <label class="text-pretty">Apellidos</label>
+                <input class="w-full rounded-lg text-wrap border-gray-300 border p-1 hover:border-blue-500 "
+                    type="text">
+
+            </div>
+        </div>
+
+        <label class="text-pretty">Usuario</label>
+        <input class="w-full rounded-lg text-wrap border-gray-300 border p-1 hover:border-blue-500 " type="text">
+
+        <label class="text-pretty">Correo</label>
+        <input class="w-full rounded-lg text-wrap border-gray-300 border p-1 hover:border-blue-500 " type="email">
+
+        <div class="flex w-full">
+            <div class="mr-2">
+                <label class="text-pretty">Contraseña</label>
+                <input class="w-full rounded-lg text-wrap border-gray-300 border p-1 hover:border-blue-500 "
+                    type="password">
+            </div>
+            <div>
+                <label class="text-pretty">Confirmar contraseña</label>
+                <input class="w-full rounded-lg text-wrap border-gray-300 border p-1 hover:border-blue-500 "
+                    type="password">
+
+            </div>
+        </div>
+
+        <div class="flex w-full justify-center mt-4 text-center ">
+            <button class="rounded-xl p-2 bg-cyan-500 text-white font-semibold w-full">
+                Registrarme </button>
+        </div>
 
 
-            <label for="">Usuario</label>
-            <input type="text" name="" id="">
-
-            <label for="">Correo</label>
-            <input type="text" name="" id="">
-
-            <label for="">Contraseña</label>
-            <input type="text" name="" id="">
-
-            <label for="">Confirmar contraseña</label>
-            <input type="text" name="" id="">
-
-            <button>
-                Registrarme
-            </button>
-        </form>
-
-    </div>
+        <a href="/admin/login" class="text-sm text-pretty font-light text-end hover:text-blue-500">¿ Ya tiene una
+            cuenta ? Inicie Sesion</a>
+    </form>
 </div>

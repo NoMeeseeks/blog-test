@@ -1,17 +1,27 @@
-<div>
-    <div>
-        <form action="">
+<div class="flex justify-center items-center w-screen h-screen bg-gradient-to-t from-blue-100 to-cyan-300">
+    <form class="flex flex-col items-start gap-2 rounded-xl bg-white shadow-xl p-16 m-4">
 
-            <label for="">Correo</label>
-            <input type="text" name="" id="">
+        <label class="text-pretty">Usuario</label>
+        <input class="w-full rounded-lg text-wrap border-gray-300 border p-1 hover:border-blue-500 " type="text">
 
-            <label for="">Contraseña</label>
-            <input type="text" name="" id="">
+        <label class="text-pretty">Contraseña</label>
+        <input class="w-full rounded-lg text-wrap border-gray-300 border p-1  hover:border-blue-500" type="text">
 
-            <button>
-                Registrarme
-            </button>
-        </form>
+        <div class="flex w-full mt-8 text-center ">
+            <button class="rounded-xl p-2 bg-cyan-500 text-white font-semibold w-full">
+                Iniciar Sesion </button>
+        </div>
 
-    </div>
+        <div class="flex gap-x-40">
+            <a href="/admin/register" class="text-sm text-pretty font-light text-end hover:text-blue-500">¿ No
+                tiene una
+                cuenta?</a>
+
+
+
+            <a href="/admin/reset" class="text-sm text-pretty font-light text-end hover:text-blue-500">¿ Olvido su
+                contraseña ?</a>
+
+        </div>
+    </form>
 </div>
